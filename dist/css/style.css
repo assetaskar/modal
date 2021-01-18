@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 300vh;
+}
+
+.header {
+  text-align: center;
+  padding: 50px 0;
+  background: linear-gradient(150deg, #eebcba 0%, #8bb0d3 50%);
+  margin-bottom: 30px;
+  border-radius: 0 0 30px 30px;
+}
+
+.main {
+  background-color: #7aa1c6;
+  text-align: center;
+  padding: 70px 40px;
+  border-radius: 30px 30px 0 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.modal__body label {
+  display: block;
+  font-size: 12px;
+  color: #494949;
+}
+
+.modal__body input {
+  width: 80%;
+  padding: 5px 1px;
+  border: none;
+  border-bottom: 2px solid #61d661;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #1b1b1b;
+}
+
+.modal__body input:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.modal__body input::-moz-placeholder {
+  color: #4b4b4b;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.modal__body input:-ms-input-placeholder {
+  color: #4b4b4b;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.modal__body input::placeholder {
+  color: #4b4b4b;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.modal__body input:invalid {
+  border-bottom: 2px solid #d66161;
+  box-shadow: none;
+}
+
+.modal__body input:focus {
+  outline: none;
+}
+
+.modal img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.modal__btn {
+  background-color: #9ce789;
+  padding: 0.5em 1.5em;
+  font-weight: bold;
+  border-radius: .3em;
+  cursor: pointer;
+  border-color: #73d35b;
+  margin-bottom: 10px;
+}
+
+.modal button:focus {
+  outline-style: none;
+}
+
+.registration,
+.sign-in {
+  font-size: 20px;
+  padding: 1em 3em;
+  background: #ec97a8;
+  margin: 0 5px 10px;
+  cursor: pointer;
+  border-radius: .3em;
+  border: none;
+  box-shadow: 0 0 5px 1px #ee768e;
+}
+
+.registration:active,
+.sign-in:active {
+  background: #f0899d;
+}
+
+.registration:focus,
+.sign-in:focus {
+  outline-style: none;
+}
+
+.registration:hover,
+.sign-in:hover {
+  box-shadow: 0 0 10px 1px #f5c1cb;
+}
+
+#cards {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.card {
+  width: 320px;
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #42698d;
+  box-shadow: 0px 0px 5px 1px #5f8fbd;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px 5px #5f8fbd;
+}
+
+.card__image {
+  width: 100%;
+  height: 330px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.card__image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.card__name {
+  font-size: 14px;
+  font-weight: initial;
+}
